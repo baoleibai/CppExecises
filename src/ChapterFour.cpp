@@ -13,6 +13,9 @@ ChapterFour::ChapterFour() {
 	point.y = 12;
 	status = 0;
 	test.name = "xyz";
+	for (int i = 0; i < 4; i ++) {
+		test.size[i] = i;
+	}
 }
 
 ChapterFour::~ChapterFour() {

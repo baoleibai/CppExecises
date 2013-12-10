@@ -13,7 +13,7 @@
 using namespace std;
 
 class ChapterFour {
-public:
+private:
 	struct Person {
 		char name[20];
 		int height;
@@ -35,6 +35,7 @@ public:
 	};
 	struct {
 		string name;
+		int size[4];
 	} test;
 
 	int status;
@@ -50,5 +51,4 @@ private:
 	void showArray();
 	void showStruct();
 };
-
 #endif /* CHAPTERFOUR_H_ */
