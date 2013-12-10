@@ -15,10 +15,12 @@ class ChapterOne {
 public:
 	ChapterOne();
 	virtual ~ChapterOne();
+	void show();
+private:
 	void func(int h, int m);
 	void calculateTime(long long secs);
 	void calculatePopulationPercentage(long long world, long long us);
-	void show();
+
 
 //variables
 private:

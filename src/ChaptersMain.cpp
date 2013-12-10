@@ -8,15 +8,21 @@
 
 #include <iostream>
 #include<climits>
-#include "ChapterOne.h"
+#include "include/ChapterOne.h"
+#include "include/ChapterFour.h"
 using namespace std;
 
 
 
 
 int main() {
+	/*
 	ChapterOne* mChapterOne = new ChapterOne();
 	mChapterOne->show();
+	 */
+
+	ChapterFour* mChapterFour = new ChapterFour();
+	mChapterFour->show();
 	return 0;
 }
 

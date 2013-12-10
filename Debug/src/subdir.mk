@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/ChapterFour.cpp \
 ../src/ChapterOne.cpp \
-../src/chapter1_6Exe.cpp 
+../src/ChaptersMain.cpp 
 
 OBJS += \
+./src/ChapterFour.o \
 ./src/ChapterOne.o \
-./src/chapter1_6Exe.o 
+./src/ChaptersMain.o 
 
 CPP_DEPS += \
+./src/ChapterFour.d \
 ./src/ChapterOne.d \
-./src/chapter1_6Exe.d 
+./src/ChaptersMain.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
