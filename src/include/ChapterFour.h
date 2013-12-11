@@ -46,9 +46,10 @@ private:
 		double id_double;
 	} ui;
 	enum Color {red, green, blue};
-	enum Bits {one = 1, two=2, four=4};
-	enum Values {zero, null = 0, pos, positive = 1};
-	enum BigStep {firstStep, bigstep = 100, ThridStep};
+	//set values for enum.
+	enum Bits {one = 1, two=2, four=4}; //set specific values
+	enum Values {zero, null = 0, pos, positive = 1}; //set elements with same and continous value
+	enum BigStep {firstStep, bigstep = 100, ThirdStep}; // ThirdStep = bigstep + 1;
 
 private:
 	int intArray[4];

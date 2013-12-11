@@ -101,10 +101,7 @@ void ChapterFour::showEnum() {
 	int iColor = sColor;
 	cout << "the value of enum is "<< sColor << " and int is "<<iColor<<endl;
 
-	enum Bits {one = 1, two=2, four=4};
-	enum Values {zero, null = 0, pos, positive = 1};
-	enum BigStep {firstStep, bigstep = 100, ThridStep};
 	cout <<"values of Bits:" << one <<" "<<two<<" "<<four<<endl;
 	cout <<"values of Values: " << zero <<" "<<null<<" "<<pos<< " "<<positive<<endl;
-	cout <<"values of BigStep: " << firstStep << " "<< bigstep <<" "<< ThridStep<<endl;
+	cout <<"values of BigStep: " << firstStep << " "<< bigstep <<" "<< ThirdStep<<endl;
 }
