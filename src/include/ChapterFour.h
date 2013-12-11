@@ -36,9 +36,19 @@ private:
 	struct {
 		string name;
 		int size[4];
+		union id {
+			int id_int;
+			char id_chars[20];
+		} testid;
 	} test;
-
-	int status;
+	union unionId {
+		int id_int;
+		double id_double;
+	} ui;
+	enum Color {red, green, blue};
+	enum Bits {one = 1, two=2, four=4};
+	enum Values {zero, null = 0, pos, positive = 1};
+	enum BigStep {firstStep, bigstep = 100, ThridStep};
 
 private:
 	int intArray[4];
@@ -50,5 +60,7 @@ public:
 private:
 	void showArray();
 	void showStruct();
+	void showUnion();
+	void showEnum();
 };
 #endif /* CHAPTERFOUR_H_ */

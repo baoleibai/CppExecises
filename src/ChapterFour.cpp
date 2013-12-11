@@ -11,7 +11,6 @@ ChapterFour::ChapterFour() {
 	int intArray[] = {1,2,3,4};
 	point.x = 10;
 	point.y = 12;
-	status = 0;
 	test.name = "xyz";
 	for (int i = 0; i < 4; i ++) {
 		test.size[i] = i;
@@ -25,6 +24,8 @@ ChapterFour::~ChapterFour() {
 void ChapterFour::show() {
 	showArray();
 	showStruct();
+	//showUnion();
+	showEnum();
 }
 
 static int GIArray[] = {1,2,3,4,5};
@@ -74,4 +75,36 @@ void ChapterFour::showStruct() {
 
 	Circle circle= {{10,20}, 20};
 	cout << "The point of a circle is "<<circle.point.x << " and " <<circle.point.y << " ,and radius is" << circle.radius<<endl;
+}
+
+void ChapterFour::showUnion() {
+	ui.id_int = 1;
+	cout << "The value of a union is " << ui.id_int << " double value is " << ui.id_double <<endl;
+	ui.id_double = 12.3;
+	cout << "The value of a union is " << ui.id_int << " string value is " << ui.id_double <<endl;
+
+	cout << "Enter a or b: ";
+	cin >> test.name;
+	if (test.name=="a") {
+		test.testid.id_int = 1;
+	} else {
+		cout << "Enter struct test id in char[] format: ";
+		cin>> test.testid.id_chars;
+	}
+	cout << "The id of test struct is " << test.testid.id_int << "  string format is " << test.testid.id_chars <<endl;
+}
+
+void ChapterFour::showEnum() {
+	Color sColor;
+	sColor = Color(0);
+	sColor = green;
+	int iColor = sColor;
+	cout << "the value of enum is "<< sColor << " and int is "<<iColor<<endl;
+
+	enum Bits {one = 1, two=2, four=4};
+	enum Values {zero, null = 0, pos, positive = 1};
+	enum BigStep {firstStep, bigstep = 100, ThridStep};
+	cout <<"values of Bits:" << one <<" "<<two<<" "<<four<<endl;
+	cout <<"values of Values: " << zero <<" "<<null<<" "<<pos<< " "<<positive<<endl;
+	cout <<"values of BigStep: " << firstStep << " "<< bigstep <<" "<< ThridStep<<endl;
 }
