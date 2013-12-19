@@ -10,6 +10,8 @@
 #include <iostream>
 #include <string>
 #include <cstring>
+#include <vector>
+#include <stack>
 using namespace std;
 
 class ChapterFour {
@@ -41,6 +43,12 @@ private:
 			char id_chars[20];
 		} testid;
 	} test;
+	struct Fish {
+		char kind[50];
+		int weight;
+		float length;
+	};
+	enum Response {No, Yes, Maybe};
 	union unionId {
 		int id_int;
 		double id_double;
@@ -50,6 +58,11 @@ private:
 	enum Bits {one = 1, two=2, four=4}; //set specific values
 	enum Values {zero, null = 0, pos, positive = 1}; //set elements with same and continous value
 	enum BigStep {firstStep, bigstep = 100, ThirdStep}; // ThirdStep = bigstep + 1;
+	struct CandyBar {
+		char brand[50];
+		float weight;
+		int calories;
+	};
 
 private:
 	int intArray[4];
@@ -58,10 +71,15 @@ public:
 	ChapterFour();
 	virtual ~ChapterFour();
 	void show();
+	void showExercises();
 private:
 	void showArray();
 	void showStruct();
 	void showUnion();
 	void showEnum();
+	void showPointers();
+	void exeSeven();
+	void exeSix();
+	void exeTen();
 };
 #endif /* CHAPTERFOUR_H_ */

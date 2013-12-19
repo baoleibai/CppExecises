@@ -5,8 +5,8 @@
  *      Author: b576
  */
 
-#ifndef CHAPTER1_H_
-#define CHAPTER1_H_
+#ifndef CHAPTERONE_H_
+#define CHAPTERONE_H_
 #include <iostream>
 #include <climits>
 using namespace std;
@@ -30,4 +30,4 @@ private:
 	static const int DaysOfYear = 365;
 	static const float Percentage = 100.0f;
 };
-#endif /* CHAPTER1_H_ */
+#endif /* CHAPTERONE_H_ */
