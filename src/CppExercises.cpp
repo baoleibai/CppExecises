@@ -10,6 +10,7 @@
 #include<climits>
 #include "include/ChapterOne.h"
 #include "include/ChapterFour.h"
+#include "include/ChapterFive.h"
 using namespace std;
 
 int main() {
@@ -17,8 +18,13 @@ int main() {
 	ChapterOne* mChapterOne = new ChapterOne();
 	mChapterOne->show();
 */
+	/*
 	ChapterFour* mChapterFour = new ChapterFour();
 	//mChapterFour->show();
 	mChapterFour->showExercises();
+	*/
+
+	ChapterFive* mC5 = new ChapterFive();
+	mC5->showExe();
 	return 0;
 }

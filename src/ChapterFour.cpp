@@ -43,6 +43,7 @@ void ChapterFour::exeSix() {
 	cin.get();
 	cin.getline((*(snacks+1)).brand, 50);
 	cout << "snack is " << snacks[1].brand << endl;
+	cout<<(snacks+1)->brand<<endl;
 	cout<<snacks<<endl;
 	delete [] snacks;
 	cout<<snacks<<endl;
