@@ -11,6 +11,7 @@
 #include "include/ChapterOne.h"
 #include "include/ChapterFour.h"
 #include "include/ChapterFive.h"
+#include "include/CSix.h"
 using namespace std;
 
 int main() {
@@ -24,7 +25,11 @@ int main() {
 	mChapterFour->showExercises();
 	*/
 
+	/*
 	ChapterFive* mC5 = new ChapterFive();
 	mC5->showExe();
+	*/
+	CSix* mCSix = new CSix();
+	mCSix->show();
 	return 0;
 }
