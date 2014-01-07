@@ -12,24 +12,28 @@
 #include "include/ChapterFour.h"
 #include "include/ChapterFive.h"
 #include "include/CSix.h"
+#include "include/cSeven.h"
 using namespace std;
 
 int main() {
-	/*
+
 	ChapterOne* mChapterOne = new ChapterOne();
-	mChapterOne->show();
-*/
-	/*
+	//mChapterOne->show();
+
 	ChapterFour* mChapterFour = new ChapterFour();
 	//mChapterFour->show();
-	mChapterFour->showExercises();
-	*/
+	//mChapterFour->showExercises();
 
-	/*
+
+
 	ChapterFive* mC5 = new ChapterFive();
-	mC5->showExe();
-	*/
+	//mC5->showExe();
+
+
 	CSix* mCSix = new CSix();
-	mCSix->show();
+	//mCSix->show();
+
+	cSeven* mCSeven = new cSeven();
+
 	return 0;
 }
