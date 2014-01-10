@@ -34,6 +34,7 @@ int main() {
 	//mCSix->show();
 
 	cSeven* mCSeven = new cSeven();
+	mCSeven->show();
 
 	return 0;
 }

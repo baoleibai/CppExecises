@@ -24,6 +24,8 @@ public:
 	cSeven();
 	virtual ~cSeven();
 	void show();
+private:
+	void exes();
 };
 
 
