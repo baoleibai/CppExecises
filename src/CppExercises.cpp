@@ -13,6 +13,8 @@
 #include "include/ChapterFive.h"
 #include "include/CSix.h"
 #include "include/cSeven.h"
+#include "include/cEight.h"
+
 using namespace std;
 
 int main() {
@@ -34,7 +36,10 @@ int main() {
 	//mCSix->show();
 
 	cSeven* mCSeven = new cSeven();
-	mCSeven->show();
+	//mCSeven->show();
+
+	C8* mC8 = new C8();
+	mC8->exercises();
 
 	return 0;
 }
